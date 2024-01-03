@@ -942,6 +942,34 @@ body {
   /* --------------------------------------------------------------------------- */
 
   /* menu2 style */
+
+  #menu2 .menu-body .arrow ,
+  #menu3 .menu-body .arrow{
+    top: 50%;
+  }
+
+  #menu2 .menu2-text,
+  #menu3 .menu3-text {
+    height: 45px;
+    width: 290px;
+    background-color: orange;
+    position: relative;
+    margin-left: auto;
+    margin-top: auto;
+    z-index: 10;
+    display: flex;
+    justify-content: left;
+}
+
+#menu2 .menu2-a,
+#menu3 .menu3-a
+ {
+    text-decoration: none;
+    color: white;
+    line-height: 45px;
+    padding-left: 10%;
+}
+
   #menu2 .menu2-section,
   #menu3 .menu3-section {
     padding: 20px;
