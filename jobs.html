@@ -310,7 +310,42 @@
             </div>
         </section>
 
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+        var form = document.getElementById('applicationForm');
 
+        form.addEventListener('submit', function (event) {
+            // Prevent the form from submitting
+            event.preventDefault();
+
+            // Validate the form fields
+            var fullName = document.getElementById('fullName').value;
+            var email = document.getElementById('email').value;
+            var resume = document.getElementById('resume').value;
+            var address = document.getElementById('address').value;
+            var phone = document.getElementById('phone').value;
+            var dateOfBirth = document.getElementById('dateOfBirth').value;
+            var gender = document.getElementById('gender').value;
+            var education = document.getElementById('education').value;
+            var graduationYear = document.getElementById('graduationYear').value;
+            var workExperience = document.getElementById('workExperience').value;
+            var whyApply = document.getElementById('whyApply').value;
+
+            // Check if any field is empty
+            if (!fullName || !email || !resume || !address || !phone || !dateOfBirth || !gender || !education || !graduationYear || !workExperience || !whyApply) {
+                alert('Please fill in all required fields');
+                return;
+            }
+
+            // Display a submitted message
+            alert('Application submitted successfully!');
+            
+            // You can also reset the form if needed
+            form.reset();
+        });
+    });
+
+</script>
 
 
         <!-- -------------------------------------------------------------------------- -->

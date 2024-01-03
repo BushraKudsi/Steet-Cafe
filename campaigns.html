@@ -245,7 +245,12 @@
         </section>
 
 
-
+        <script>
+            function toggleDescription(descriptionId) {
+                var description = document.getElementById(descriptionId);
+                description.style.display = (description.style.display === 'none' || description.style.display === '') ? 'block' : 'none';
+            }
+        </script>
 
 
         <!-- -------------------------------------------------------------------------- -->

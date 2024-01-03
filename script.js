@@ -122,9 +122,9 @@ $(document).ready(function() {
     });
 
     function setBgToBody() {
-        body.css('background-image', slides[activeSlide].style.backgroundImage);
+        body.css('background-image', slides.eq(activeSlide).css('background-image'));
     }
-
+    
     function setActiveSlide() {
         slides.removeClass('active');
         slides.eq(activeSlide).addClass('active');
@@ -181,114 +181,13 @@ $(document).ready(function() {
 
 
 
-
-// ------------------add your script here------------------
-
-// function changeLink() {
-//     if(activeSlide == 0){
-//         $('.menu2-text .menu2-a').text("Coffee & Drinks");
-//         $('.menu2-text .menu2-a').attr("href", "menu2.html");
-//         $('.menu-slider-link').attr("href", "menu2.html");
-//     }
-//     else if(activeSlide == 1){
-//         $('.menu2-text .menu2-a').text("Sandwiches & Snacks");
-//         $('.menu2-text .menu2-a').attr("href", "menu2.html");
-//         $('.menu-slider-link').attr("href", "menu2.html");
-
-//     }
-//     else{
-//         $('.menu3-text .menu3-a').text("Muffins & Cakes");
-//         $('.menu3-text .menu3-a').attr("href", "menu3.html");
-//         $('.menu-slider-link').attr("href", "menu3.html");
-
-//     }
-// }
-
-
-// var mealData = [
-//     { name: 'Döner', price: '75 TL', image: 'images/doner.png' },
-//     { name: 'Falafel', price: '70 TL', image: 'images/falafel.png' },
-//     { name: 'Fries', price: '50 TL', image: 'images/fries.png' },
-//     { name: 'Sandwich', price: '50 TL', image: 'images/sandwich.png' },
-//     { name: 'Meat Balls', price: '25 TL', image: 'images/meatballs.png' },
-//     { name: 'Hot Dog', price: '30 TL', image: 'images/hotdog.png' },
-//     { name: 'Wet Burger', price: '30 TL', image: 'images/wetburger.png' },
-//     { name: 'Toast', price: '50 TL', image: 'images/toast.png' }
-// ];
-
-// generateMenuItems(mealData, 'dsandwichMenu');
-
-
-// function generateMenuItems(data, menuContainerId) {
-// var menuContainer = $('#' + menuContainerId);
-
-// menuContainer.empty();
-
-// $.each(data, function(index, drink) {
-//     var menuItem = $('<div class="menu1-item"></div>');
-//     menuItem.append('<img src="' + drink.image + '" alt="' + drink.name + '">');
-//     menuItem.append('<h3>' + drink.name + '</h3>');
-//     menuItem.append('<p>' + drink.price + '</p>');
-
-//     menuContainer.append(menuItem);
-// });
-// }
-
-// function generateMenuItems(data, menuContainerId) {
-//     var menuContainer = $('#' + menuContainerId);
-
-//     menuContainer.empty();
-
-//     $.each(data, function(index, drink) {
-//         var menuItem = $('<div class="menu1-item"></div>');
-//         menuItem.append('<img src="' + drink.image + '" alt="' + drink.name + '">');
-//         menuItem.append('<h3>' + drink.name + '</h3>');
-//         menuItem.append('<p>' + drink.price + '</p>');
-
-//         menuContainer.append(menuItem);
-//     });
-// }
+//   ------------------------------------------------------------------------------
 
 
 
-// var muffinCakeData = [
-// { name: 'Apple Pie', price: '50 TL', image: 'images/apple.png' },
-// { name: 'Pancakes', price: '45 TL', image: 'images/pancakes.png' },
-// { name: 'Muffin', price: '40 TL', image: 'images/muffin.png' },
-// { name: 'Cake', price: '55 TL', image: 'images/cake.png' }
-// ];
 
-// generateMenuItems(muffinCakeData, 'dCakeMenu');
 
-// function generateMenuItems(data, menuContainerId) {
-// var menuContainer = $('#' + menuContainerId);
 
-// menuContainer.empty();
-
-// $.each(data, function(index, drink) {
-//     var menuItem = $('<div class="menu1-item"></div>');
-//     menuItem.append('<img src="' + drink.image + '" alt="' + drink.name + '">');
-//     menuItem.append('<h3>' + drink.name + '</h3>');
-//     menuItem.append('<p>' + drink.price + '</p>');
-
-//     menuContainer.append(menuItem);
-// });
-// }
-
-// function generateMenuItems(data, menuContainerId) {
-//     var menuContainer = $('#' + menuContainerId);
-
-//     menuContainer.empty();
-
-//     $.each(data, function(index, drink) {
-//         var menuItem = $('<div class="menu1-item"></div>');
-//         menuItem.append('<img src="' + drink.image + '" alt="' + drink.name + '">');
-//         menuItem.append('<h3>' + drink.name + '</h3>');
-//         menuItem.append('<p>' + drink.price + '</p>');
-
-//         menuContainer.append(menuItem);
-//     });
-// }
 
 
 

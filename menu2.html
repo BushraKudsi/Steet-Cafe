@@ -255,6 +255,102 @@
             <!-- ------------------------------------------------------------ -->
         </section>
 
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+
+<script >
+
+    console.log("hello");
+
+var mealData = [
+        { name: 'Döner', price: '75 TL', image: 'images/doner.png' },
+        { name: 'Falafel', price: '70 TL', image: 'images/falafel.png' },
+        { name: 'Fries', price: '50 TL', image: 'images/fries.png' },
+        { name: 'Sandwich', price: '50 TL', image: 'images/sandwich.png' },
+        { name: 'Meat Balls', price: '25 TL', image: 'images/meatballs.png' },
+        { name: 'Hot Dog', price: '30 TL', image: 'images/hotdog.png' },
+        { name: 'Wet Burger', price: '30 TL', image: 'images/wetburger.png' },
+        { name: 'Toast', price: '50 TL', image: 'images/toast.png' }
+    ];
+
+    generateMenuItems(mealData, 'dsandwichMenu');
+
+function generateMenuItems(data, menuContainerId) {
+    var menuContainer = $('#' + menuContainerId);
+
+    menuContainer.empty();
+
+    $.each(data, function(index, drink) {
+        var menuItem = $('<div class="menu1-item"></div>');
+        menuItem.append('<img src="' + drink.image + '" alt="' + drink.name + '">');
+        menuItem.append('<h3>' + drink.name + '</h3>');
+        menuItem.append('<p>' + drink.price + '</p>');
+
+        menuContainer.append(menuItem);
+    });
+}
+
+    function generateMenuItems(data, menuContainerId) {
+        var menuContainer = $('#' + menuContainerId);
+
+        menuContainer.empty();
+
+        $.each(data, function(index, drink) {
+            var menuItem = $('<div class="menu1-item"></div>');
+            menuItem.append('<img src="' + drink.image + '" alt="' + drink.name + '">');
+            menuItem.append('<h3>' + drink.name + '</h3>');
+            menuItem.append('<p>' + drink.price + '</p>');
+
+            menuContainer.append(menuItem);
+        });
+    }
+
+
+var muffinCakeData = [
+    { name: 'Apple Pie', price: '50 TL', image: 'images/apple.png' },
+    { name: 'Pancakes', price: '45 TL', image: 'images/pancakes.png' },
+    { name: 'Muffin', price: '40 TL', image: 'images/muffin.png' },
+    { name: 'Cake', price: '55 TL', image: 'images/cake.png' }
+];
+
+generateMenuItems(muffinCakeData, 'dCakeMenu');
+
+function generateMenuItems(data, menuContainerId) {
+    var menuContainer = $('#' + menuContainerId);
+
+    menuContainer.empty();
+
+    $.each(data, function(index, drink) {
+        var menuItem = $('<div class="menu1-item"></div>');
+        menuItem.append('<img src="' + drink.image + '" alt="' + drink.name + '">');
+        menuItem.append('<h3>' + drink.name + '</h3>');
+        menuItem.append('<p>' + drink.price + '</p>');
+
+        menuContainer.append(menuItem);
+    });
+}
+
+    function generateMenuItems(data, menuContainerId) {
+        var menuContainer = $('#' + menuContainerId);
+
+        menuContainer.empty();
+
+        $.each(data, function(index, drink) {
+            var menuItem = $('<div class="menu1-item"></div>');
+            menuItem.append('<img src="' + drink.image + '" alt="' + drink.name + '">');
+            menuItem.append('<h3>' + drink.name + '</h3>');
+            menuItem.append('<p>' + drink.price + '</p>');
+
+            menuContainer.append(menuItem);
+        });
+    }
+
+</script>
+
+
+
+
+
 
 
 
@@ -326,7 +422,6 @@
 
 
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <!-- js -->
         <script src="script.js"></script> 

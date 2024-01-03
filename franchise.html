@@ -221,27 +221,95 @@
 
         
 
-        <section id="">
+        <section id="franchise">
            <!-- --------------------add your html here--------------- -->
 
 
+            <div class="franchise-image" action="#">
+                <img src="./images/photo4.webp" alt="streetcafe" class="franchise-image" height="170" width="500"> 
+            </div> <br>
+        
+            <div class="franchise-container" action="#">
+                
+                <form action="#" method="post">
+                    <h3>Franchise Application Form</h3>
+                    <p>You can apply by filling out the form below.</p>
+                    <h4>Personal Information</h4>
+            
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+            
+                    <div class="phone-section">
+                        <label for="areaCode">Area Code:</label>
+                        <input type="text" id="areaCode" name="areaCode" style="width: 60px;" required>
+            
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+            
+                    <h4>Investment Location</h4>
+            
+                    <label for="province">Preferred Province:</label>
+                    <input type="text" id="province" name="province" required>
+            
+                    <label for="district">Preferred District:</label>
+                    <input type="text" id="district" name="district" required>
+            
+                    <label for="cashCapital">Do you have approximately $100,000 in cash capital for the branch to start operating?</label>
+                    <select id="cashCapital" name="cashCapital" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+            
+                    <h4>Additional Information</h4>
+                    <label for="message">Additional Information (Optional):</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                    <p>By submitting this form, you acknowledge that the personal data provided will be processed by us for the purpose of providing information, feedback, suggestions, and complaint processes related to the relevant subject. Your personal data will be processed and securely stored with appropriate security measures. You can access our Privacy Policy  <a href="javascript:void(0);" onclick="showPrivacyPolicy();">here</a>.
+                    </p>
+            
+                    <button type="button" onclick="validateForm()">Submit</button>
+                </form>
+            </div>
 
+<!-- ------------------------------------------------------------ -->
+        </section><br><br><br>
 
-
-
-
-
-           <!-- ------------------------------------------------------------ -->
-        </section>
-
-
+        <script>
+            function validateForm() {
+            
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var areaCode = document.getElementById('areaCode').value;
+                var phone = document.getElementById('phone').value;
+                var province = document.getElementById('province').value;
+                var district = document.getElementById('district').value;
+        
+                
+                if (!name || !email || !areaCode || !phone || !province || !district) {
+                    alert('Please fill in all required fields.');
+                } else {
+                    
+                    alert('Your application has been successfully submitted!');
+                }
+            }
+        
+            function showPrivacyPolicy() {
+            var privacyPolicyText = "1. Collection and Use of Personal Information:\n\nWhen you visit our website (e.g., www.streetCafe.com), we collect and use your personal information (e.g., name, email, phone number) to communicate with you and better understand the services we can provide. This information may be collected when you fill out a contact form or create an account.\n\n2. Sharing and Disclosure of Personal Information:\n\nWe do not trade or sell your personal information to third parties. However, we may share this information with authorized authorities when required by law or to protect our website, rights, or security.\n\n3. Cookie:\n\nOur website may use cookies to enhance user experience. Cookies are small text files stored in your browser. You can choose to disable or reject cookies, but some features of our website may not function properly.\n\n4. Changes:\n\nThis Privacy Policy may be updated over time to meet the requirements of our website. We recommend reviewing the latest revision date when changes occur.\n\n5. Contact:\n\nIf you have any questions or concerns about this Privacy Policy, please contact us at streetcafe@gmail.com. \n\n";
+            
+            alert(privacyPolicyText);
+        }
+        </script>
 
 
 
         <!-- -------------------------------------------------------------------------- -->
 
         <!-- footer container -->
-        <section id="bottom-container" class="row">
+        <section id="bottom-container" class="">
             <footer class="footer-distributed">
             <div class="footer-left">
                 <h3>Street<span>Café</span></h3>
