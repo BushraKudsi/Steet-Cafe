@@ -221,19 +221,94 @@
 
         
 
-        <section id="">
-           <!-- --------------------add your html here--------------- -->
-
-
-
-
-
-
-
-
-           <!-- ------------------------------------------------------------ -->
+        <!-- Job Application Section: Main container for the job application content -->
+        <section id="job-application">
+            <div class="container">
+                <div class="header-section">
+                    <!-- Header Section: Introduction to Job Opportunity -->
+                    <h1>Join Our Team at Street Cafe</h1>
+                </div>
+                 <!-- First Column: Image and Introductory Text -->
+                <div class="column">
+                    <img src="images/job.jpg" alt="Additional Image" class="form-image">
+                    <p class="image-text">Are you ready to climb the career ladder?<br>
+                        You can also get a suitable job opportunity for yourself at the Street Cafe.<br> Apply immediately to work in our cafes.</p>
+                </div>
+                <!-- Second Column: Job Application Form -->
+                <div class="column">
+                    <h2><br>Job Application Form</h2>
+                     <!-- Form Start -->
+                    <form action="submit_application.php" method="post" id="applicationForm">
+                        <form method="POST" action="process_form.php">
+                        <!-- Personal Information -->
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName">
+        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+        
+                        <!-- Resume Upload Section -->
+                        <label for="resume">Resume (PDF, DOCX):</label>
+                        <div class="file-input-container">
+                            <input type="file" id="resume" name="resume" accept=".pdf, .docx" required style="display: none;">
+                            <button type="button" onclick="document.getElementById('resume').click()">Choose File</button>
+                            <span id="selectedFileName">No file chosen</span>
+                        </div>
+                        <!-- Address Section -->
+                        <label for="adress">Please enter your Address:</label>
+                        <textarea id="address" name="address" rows="5" required></textarea>
+        
+                        <!-- Additional Personal Information -->
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+        
+                        <label for="dateOfBirth">Date of Birth:</label>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+        
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+        
+                        <!-- Educational Background -->
+                        <label for="education">Highest Education Level:</label>
+                        <select id="education" name="education" required>
+                            <option value="highSchool">High School</option>
+                            <option value="associate">Associate's Degree</option>
+                            <option value="bachelor">Bachelor's Degree</option>
+                            <option value="master">Master's Degree</option>
+                            <option value="doctorate">Doctorate</option>
+                        </select>
+        
+                        <label for="graduationYear">Year of Graduation:</label>
+                        <input type="number" id="graduationYear" name="graduationYear" min="1980" max="2024" required>
+        
+                        <!-- Work Experience -->
+                        <label for="workExperience">Years of Work Experience:</label>
+                        <input type="number" id="workExperience" name="workExperience" min="0" required>
+        
+                        <!-- Additional Questions -->
+                        <label for="whyApply">Why do you want to work at Street Cafe?</label>
+                        <textarea id="whyApply" name="whyApply" rows="5" required></textarea>
+        
+                        <label for="reference">Reference (if any):</label>
+                        <input type="text" id="reference" name="reference">
+        
+                        <!-- Availability -->
+                        <label for="availability">Availability:</label>
+                        <select id="availability" name="availability" required>
+                            <option value="fullTime">Full-time</option>
+                            <option value="partTime">Part-time</option>
+                        </select>
+        
+                        <!-- Submit Button -->
+                        <button type="submit">Submit Application</button>
+                    </form>
+                </div>
+            </div>
         </section>
-
 
 
 
@@ -241,7 +316,7 @@
         <!-- -------------------------------------------------------------------------- -->
 
         <!-- footer container -->
-        <section id="bottom-container" class="row">
+        <section id="bottom-container" class="">
             <footer class="footer-distributed">
             <div class="footer-left">
                 <h3>Street<span>Café</span></h3>

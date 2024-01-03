@@ -710,3 +710,354 @@ body {
 }
 
 /* -------------------------add your css here--------------------- */
+
+/* workshops */
+
+#workshops {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    background-color: #D2B48C; 
+    position: relative;
+    top: 56px;
+    width: 100%;
+    padding: 0px;
+    overflow-x: hidden;
+}
+#workshops .workshop h2 {
+    text-align: center; 
+}
+#workshops .workshop {
+    flex: 1; 
+    max-width: 520px; 
+}
+
+#workshops .workshop img {
+    width: 100%; 
+}
+
+#workshops .workshop-description {
+    text-align: center; 
+    margin-top: 10px; 
+}
+
+#workshops .workshop-description p {
+    font-size: 18px;
+}
+#workshops .workshop h6 {font-size: 18px;
+}
+
+
+/* campaigns */
+
+#campaigns {
+    position: relative;
+    top: 56px;
+    width: 100%;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: #C0A080; 
+    color: #FFFFFF; 
+    display:flex;
+    justify-content: space-around;
+}
+
+#campaigns .campaign-container {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    cursor: pointer;
+}
+
+#campaigns .image-container img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+#campaigns .campaign-container h2 {
+    font-size: 20px; 
+    color: #FFFFFF; 
+    text-align: center;
+}
+
+
+#campaigns .campaign-container p {
+    font-size: 18px; 
+    color: #FFFFFF; 
+}
+
+/* .caption {
+    display: none;
+} */
+
+/* -------------------------job--------------------- */
+
+#job-application {
+    
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #32399d;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    padding: 100px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#job-application .header-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#job-application h1, h2 {
+    color: #333;
+}
+
+#job-application .container {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+#job-application .column,
+#job-application .column {
+    width: 58%;
+}
+
+#job-application .form-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+#job-application .image-text {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#job-application form {
+    display: flex;
+    flex-direction: column;
+}
+
+#job-application label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#job-application input,
+#job-application select,
+#job-application textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#job-application .file-input-container {
+    display: flex;
+    align-items: center;
+}
+
+#job-application button {
+    background-color:rgb(153, 142, 142);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#job-application button:hover {
+    background-color: rgb(130, 118, 118);
+}
+
+/* -------------------------branches--------------------- */
+#branches-subheading{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+
+    position: relative;
+    top: 56px;
+    width: 100%;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+#branches-subheading h1 {
+    color: #333;
+    text-align: center;
+    padding-top: 70px;
+  }
+  
+  #branches-subheading .branch-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #branches-subheading .branch-card {
+    width: 300px;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Smooth transition for the box-shadow property */
+    text-align: center;
+    margin-top: 90px;
+  }
+  
+  #branches-subheading .branch-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Box-shadow on hover */
+  }
+  
+  #branches-subheading .branch-image {
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+  }
+  
+  #branches-subheading .branch-card:hover .branch-image {
+    transform: scale(0.9); /* Scale the image up on hover */
+  }
+
+
+
+
+  /* --------------------------------------------------------------------------- */
+
+  /* menu2 style */
+  #menu2 .menu2-section,
+  #menu3 .menu3-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#menu2 .menu2section h2,
+#menu3 .menu3-section h2 {
+    padding: 60px 0px;
+}
+
+#menu2 .menu2-items,
+#menu3 .menu3-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#menu2 .menu2-item,
+#menu3 .menu3-item {
+    width: 70%; 
+    margin: 30px;
+    text-align: center;
+}
+
+#menu2 .menu2-item img,
+#menu3 .menu3-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#menu2 .menu2-item h3,
+#menu3 .menu3-item h3 {
+    margin: 2px 0;
+}
+
+#menu2 .menu2-item p,
+#menu3 .menu3-item p {
+    color: #888;
+    font-size: 25px;
+}
+
+@media (min-width: 768px) {
+    #menu2 .menu2-item,
+    #menu3 .menu3-item {
+        width: 20%; 
+    }
+}
+
+#menu2 .menu2-section h2::after,
+#menu3 .menu3-section h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: orange;
+    margin-top: 10px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+#menu2 .menu2-section h2:hover::after,
+#menu3 .menu3-section h2:hover::after {
+    transform: scaleX(1); 
+}
+
+/* -------------------------Product--------------------- */
+
+#product-container {
+    position: relative;
+    top: 55px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Product Section */
+#product-container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#product-container .col-md-2 {
+    width: 16.6667%;
+    padding: 0 15px;
+}
+
+#product-container .product {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; 
+}
+
+#product-container .product img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+#product-container .product-details h4 {
+    margin: 10px 0;
+}
+
+#product-container .product-details .price {
+    color: #888;
+    font-size: 25px;
+}
+    
+  

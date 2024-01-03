@@ -221,17 +221,27 @@
 
         
 
-        <section id="">
-           <!-- --------------------add your html here--------------- -->
-
-
-
-
-
-
-
-
-           <!-- ------------------------------------------------------------ -->
+        <section id="campaigns">
+            <div class="campaign-container" id="campaign1">
+                <br>
+                <br>
+               <i> <h2>Happy Hour!</h2></i>
+                <p class="campaign-description" id="desc1" style="display: none;">During happy hour, get a complimentary dessert of your choice with any coffee purchase.<br>  Happy hour: 5.00-7.00 PM </p>
+        
+                <div class="image-container">
+                    <img src="images/coffeanddesert.jpg" alt="Happy Hour Offer" onclick="toggleDescription('desc1')">
+                </div>
+            </div>
+        
+            <div class="campaign-container" id="campaign2">
+                <br>
+                <br>
+               <i> <h2>Student Discount!</h2> </i>
+                <p class="campaign-description" id="desc2" style="display: none;">Enjoy a %20 discount on all products if you're a college student!</p>
+                <div class="image-container">
+                    <img src="images/students_discount.jpg" alt="Student Discount" onclick="toggleDescription('desc2')">
+                </div>
+            </div>
         </section>
 
 
@@ -241,7 +251,7 @@
         <!-- -------------------------------------------------------------------------- -->
 
         <!-- footer container -->
-        <section id="bottom-container" class="row">
+        <section id="bottom-container" class="">
             <footer class="footer-distributed">
             <div class="footer-left">
                 <h3>Street<span>Café</span></h3>
